@@ -1,7 +1,10 @@
 # 4.Execution_of_NetworkCommands
-## AIM :Use of Network commands in Real Time environment
-## Software : Command Prompt And Network Protocol Analyzer
-## Procedure: To do this EXPERIMENT- follows these steps:
+## AIM :
+Use of Network commands in Real Time environment
+## Software : 
+Command Prompt And Network Protocol Analyzer
+## Procedure: 
+To do this EXPERIMENT- follows these steps:
 <BR>
 In this EXPERIMENT- students have to understand basic networking commands e.g cpdump, netstat, ifconfig, nslookup ,traceroute and also Capture ping and traceroute PDUs using a network protocol analyzer 
 <BR>
@@ -25,8 +28,16 @@ This commands includes
 <BR>
 • Other IP Commands e.g. show ip route etc.
 <BR>
+## Program:
+```
+from scapy.all import *
 
+target = "www.google.com"
+result, _ = traceroute(target, maxttl=32)
+print(result)
+```
 ## Output
+![image](https://github.com/Yuvan291205/4.Execution_of_NetworkCommends/assets/138849170/ec35e614-067e-46d7-83f9-5e696f81953b)
 
 ## Result
 Thus Execution of Network commands Performed 
